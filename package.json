@@ -2,6 +2,7 @@
   "name": "weather_react",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://www.weather.com.cn",
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
@@ -43,6 +44,7 @@
     "react-app-polyfill": "^0.2.1",
     "react-dev-utils": "^7.0.3",
     "react-dom": "^16.8.3",
+    "react-redux": "^6.0.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",

@@ -16,7 +16,6 @@ function* fetchWeather(action) {
     
 }
 function* weatherSaga() {
-    debugger;
     yield takeEvery(FETCH_WEATHER_API, fetchWeather)
 }
 

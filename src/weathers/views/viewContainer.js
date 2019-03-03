@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
 import View from './view';
 const mapStateToProps = (state) => {
-    const weatherData = state.weather;
+    const {status, weatherinfo } = state.weather;
+    console.log(weatherinfo)
     return {
-        status: weatherData.status,
-        cityName: weatherData.city,
-        weather: weatherData.weather,
-        lowestTemp: weatherData.temp1,
-        highestTemp: weatherData.temp2
+        status,
+        cityName: weatherinfo.city,
+        weather: weatherinfo.weather,
+        lowestTemp: weatherinfo.temp1,
+        highestTemp: weatherinfo.temp2
     }
 }
 

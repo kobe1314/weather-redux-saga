@@ -6,21 +6,29 @@ class View extends Component {
         super(props);
         this.state = {  };
     }
+
+    componentWillUpdate() {
+        console.log('componentWillUpdate:'+ this.props.weather);
+    }
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        console.log(nextProps)
+         return true;
+    }
     render() {
-        const { cityName, weather, lowestTemp, highestTemp, state, error } = this.props;
+        const { cityName, weather, lowestTemp, highestTemp, status, error } = this.props;
         
-        if (state === LOADING) {
+        if (status === LOADING) {
             return (<div>Don't have the data now!</div>)
         }
 
-        if (state === SUCCESS) {
+        if (status === SUCCESS) {
             return <div>
             {cityName} {weather} the lowest temperature {lowestTemp} the highest temperature
             {highestTemp}
           </div>
         }
 
-        if (state === FAIL) {
+        if (status === FAIL) {
             return (<div>Fetch api fail, this is error info {error}</div>)
         }
 
