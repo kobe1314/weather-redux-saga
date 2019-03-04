@@ -8,10 +8,10 @@ function* fetchWeather(action) {
     try{
         const response = yield call(fetchAPI,apiUrl);
         console.log(response);
-        debugger;
         yield put({type: FETCH_SUCCESS, result : response})
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        console.log(error);
+        yield put({type: FETCH_FAIL, error})
     }    
     
 }

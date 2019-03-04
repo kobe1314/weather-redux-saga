@@ -7,7 +7,6 @@ class CitySelector extends PureComponent {
     }
 
     fetchWeatherData = (ev) => {
-        debugger;
         const cityCode = ev.target.value;
         this.props.onSelectCity(cityCode);
     }

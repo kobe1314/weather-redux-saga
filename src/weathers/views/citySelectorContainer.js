@@ -1,7 +1,7 @@
 import {
     FETCH_WEATHER_API
 } from '../actiontype';
-import CitySelector from './citySelector';
+import CitySelector from './CitySelector';
 import { connect } from 'react-redux';
 const mapDispatherToProps = (dispatch) => {
     return {
