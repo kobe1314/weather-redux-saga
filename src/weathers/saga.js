@@ -34,6 +34,8 @@ function* weatherSaga() {
 }
 
 
-export {
-    weatherSaga
-}
+export default function* rootSaga() {
+    yield all([
+      weatherSaga()
+    ])
+  }

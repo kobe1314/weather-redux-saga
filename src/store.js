@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware,compose,combineReducers } from 'redux';
 import {weatherReducer} from './weathers/reducer';
 import createSagaMiddleware from 'redux-saga';
-import {weatherSaga} from './weathers/saga';
+import rootSaga from './weathers/saga';
 // import Perf from 'react-addons-perf';
 
 const sagaMiddleware=createSagaMiddleware();
@@ -24,6 +24,6 @@ const storeEnhancers = compose(
     (win && win.devToolsExtension) ? win.devToolsExtension(): (f) => f )
 const store = createStore(rootReducer,{},storeEnhancers);
 
-sagaMiddleware.run(weatherSaga);
+sagaMiddleware.run(rootSaga);
 
 export { store };
