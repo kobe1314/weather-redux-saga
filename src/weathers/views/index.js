@@ -10,8 +10,7 @@ class Index extends PureComponent {
     render() {
         return (
             <div>
-                <CitySelector/>
-                <ViewContainer/>
+                "hello react"
             </div>
         );
     }
