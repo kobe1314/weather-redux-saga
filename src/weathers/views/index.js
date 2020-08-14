@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import ViewContainer from './WeatherViewContainer';
-import CitySelector from './CitySelectorContainer';
+// import ViewContainer from './WeatherViewContainer';
+// import CitySelector from './CitySelectorContainer';
 
 class Index extends PureComponent {
     constructor(props) {
