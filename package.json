@@ -118,5 +118,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "redux": "^2.0.0"
   }
 }
