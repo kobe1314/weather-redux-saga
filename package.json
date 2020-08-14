@@ -120,6 +120,7 @@
     ]
   },
   "devDependencies": {
-    "redux": "^2.0.0"
+    "redux": "^2.0.0",
+    "redux-saga": "^1.1.3"
   }
 }
